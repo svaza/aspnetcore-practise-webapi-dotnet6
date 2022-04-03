@@ -1,0 +1,25 @@
+GET https://localhost:7184/pizza
+
+###
+
+GET https://localhost:7184/pizza/2
+
+###
+
+GET https://localhost:7184/pizza/6
+
+###
+
+POST https://localhost:7184/pizza
+Content-Type: application/json
+
+{"name":"Simhala", "isGlutenFree":false}
+
+###
+PUT https://localhost:7184/pizza/3
+Content-Type: application/json
+
+{"id": 3, "name":"Hawaii-USA", "isGlutenFree":false}
+
+###
+DELETE https://localhost:7184/pizza/3
